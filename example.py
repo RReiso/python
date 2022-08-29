@@ -89,3 +89,7 @@ print([5, 8, 9, 5].count(5))  # counts occurances - 2
 
 b = {"lala": 9, "kal": True, "lsds": "hhh"}
 print(b["kal"])
+
+for num in range(2, 5):
+    print(num) # 2,3,4
+
