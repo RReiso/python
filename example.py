@@ -1,3 +1,4 @@
+from re import A
 import helper  # name if the file - or import helper as yourname
 #  or -  from helper import some_function, a or * - then you can reference directly by the name
 helper.some_function()
@@ -86,10 +87,19 @@ a.add(5)
 a.remove(1)
 
 print([5, 8, 9, 5].count(5))  # counts occurances - 2
+my_sum = sum([2, 5, 7])
 
 b = {"lala": 9, "kal": True, "lsds": "hhh"}
 print(b["kal"])
 
 for num in range(2, 5):
-    print(num) # 2,3,4
+    print(num)  # 2,3,4
 
+
+a = "labdien hello"
+# a[1] = A - TypeError: 'str' object does not support item assignment
+
+b = {"c": "d", "e": 12}
+print(b.keys())  # dict_keys(['c', 'e'])
+print(type(b.keys()))  # <class 'dict_keys'>
+print(list(b.keys()))  # ['c', 'e']
