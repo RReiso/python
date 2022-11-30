@@ -13,8 +13,8 @@ class bcolors:
 
 class Manager:
     def __init__(self):
-        self.REMINDER_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/......"
-        self.CALENDAR_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/......"
+        self.REMINDER_WEBHOOK_URL = ""
+        self.CALENDAR_WEBHOOK_URL = ""
         self.OPTIONS = ["1", "2", "3", "4", "5", "6"]
 
     def start_manager(self):
